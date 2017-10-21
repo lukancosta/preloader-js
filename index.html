@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+    <head>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       
+       <link rel="stylesheet" href="Resources/css/style.css">
+       
+       <title>Loader</title>
+       
+       <script>
+            window.addEventListener('load', function(){
+                
+               var loader = document.getElementById('preloader-container');
+                loader.style.opacity = '0';
+                
+                loader.addEventListener('transitionend', function(){
+                    loader.style.display = 'none';    
+                    })
+            });
+        </script>    
+        
+    </head>
+    <body>
+        <div id="preloader-container" class="">
+            <div id="preloader-content">
+                <div id="preloader-circle"></div>
+                <p>Loading...</p>
+    
+            </div>
+        </div>
+        <main>
+           <section class="hero">
+              
+               <h1>Content</h1>
+               
+               <iframe width="560" height="315" src="https://www.youtube.com/embed/D89C8T9yKpM" frameborder="0" allowfullscreen></iframe>
+               
+           </section>
+            
+            
+            
+        </main>
+        
+    </body>
+    
+</html>
